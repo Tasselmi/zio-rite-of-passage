@@ -51,9 +51,14 @@ lazy val foundations = (project in file("modules/foundations"))
     libraryDependencies ++= dependencies
   )
 
+lazy val server = (project in file("modules/server"))
+  .settings(
+    libraryDependencies ++= dependencies
+  )
+
 lazy val root = (project in file("."))
   .settings(
     name := "zio-rite-of-passage"
   )
-  .aggregate(foundations)
-  .dependsOn(foundations)
+  .aggregate(foundations, server)
+  .dependsOn(foundations, server)
