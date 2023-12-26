@@ -1,3 +1,7 @@
+#  docker-compose up
+#  docker ps
+#  docker exec -it zio-rite-of-passage-db-1 psql -U docker
+#  \c demodb
 version: '3.1'
 
 services:
