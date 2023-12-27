@@ -5,6 +5,9 @@ import io.getquill.*
 import io.getquill.jdbczio.Quill
 import com.rockthejvm.reviewboard.domain.data.*
 
+/**
+ * to interact with databases
+ */
 trait CompanyRepository {
   def create(company: Company): Task[Company]
   def update(id: Long, op: Company => Company): Task[Company]
@@ -47,4 +50,24 @@ class CompanyRepositoryLive(quill: Quill.Postgres[SnakeCase]) extends CompanyRep
   override def get: Task[List[Company]] = run {
     query[Company]
   }
+}
+
+object CompanyRepositoryLive {
+  val layer = ZLayer {
+    ZIO.serviceWith[Quill.Postgres[SnakeCase.type]](q => CompanyRepositoryLive(q))
+    //                                       ^^^^^ VERY IMPORTANT!
+  }
+}
+
+object CompanyRepositoryDemo extends ZIOAppDefault {
+
+  val program = for {
+    repo <- ZIO.service[CompanyRepository]
+    _ <- repo.create(Company(-1L, "rock-the-jvm", "rock the jvm", "rockthejvm.com"))
+  } yield ()
+  override def run: ZIO[Any with ZIOAppArgs with Scope, Any, Any] = program.provide(
+    CompanyRepositoryLive.layer,
+    Quill.Postgres.fromNamingStrategy(SnakeCase),
+    Quill.DataSource.fromPrefix("rockthejvm.db")
+  )
 }

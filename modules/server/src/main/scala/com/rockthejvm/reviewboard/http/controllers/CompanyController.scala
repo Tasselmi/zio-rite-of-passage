@@ -5,38 +5,36 @@ import zio.*
 import scala.collection.mutable
 import com.rockthejvm.reviewboard.http.endpoints.CompanyEndpoints
 import com.rockthejvm.reviewboard.domain.data.Company
+import com.rockthejvm.reviewboard.services.CompanyService
 import sttp.tapir.server.ServerEndpoint
 
-class CompanyController private extends BaseController with CompanyEndpoints {
-
-  val db = mutable.Map.empty[Long, Company]
+class CompanyController private (service: CompanyService) extends BaseController with CompanyEndpoints {
 
   // create
   val create: ServerEndpoint[Any, Task] = createEndpoint.serverLogicSuccess { req =>
-    ZIO.succeed {
-      // create an id
-      val newId = db.keys.maxOption.getOrElse(0L) + 1L
-      // create a slug
-      // val slug = Company.makeSlug(req.name)
-      // create a company
-      val newCompany = req.toCompany(newId)
-      // insert the company into the 'database'
-      db += (newId -> newCompany)
-      // return that company
-      newCompany
-    }
+    service.create(req)
   }
 
   val getAll: ServerEndpoint[Any, Task] =
-    getAllEndpoint.serverLogicSuccess(_ => ZIO.succeed(db.values.toList))
+    getAllEndpoint.serverLogicSuccess(_ => service.getAll)
 
   val getById: ServerEndpoint[Any, Task] = getByIdEndpoint.serverLogicSuccess { id =>
-    ZIO.attempt(id.toLong).map(db.get)
+    ZIO.attempt(id.toLong).flatMap(service.getById).catchSome {
+      case _: NumberFormatException => service.getBySlug(id)
+    }
   }
 
   override val routes: List[ServerEndpoint[Any, Task]] = List(create, getAll, getById)
 }
 
 object CompanyController {
-  val makeZIO = ZIO.succeed(new CompanyController)
+  val makeZIO: ZIO[CompanyService, Nothing, CompanyController] =
+    ZIO.serviceWith[CompanyService](cs => new CompanyController(cs))
+
+  val makeZIO_v2: ZIO[CompanyService, Nothing, CompanyController] =
+    ZIO.serviceWithZIO[CompanyService](cs => ZIO.succeed(new CompanyController(cs)))
+
+  val makeZIO_v3: ZIO[CompanyService, Nothing, CompanyController] = for {
+    service <- ZIO.service[CompanyService]
+  } yield new CompanyController(service)
 }
