@@ -8,30 +8,47 @@ import io.getquill.*
 trait ReviewRepository {
   def create(review: Review): Task[Review]
   def getById(id: Long): Task[Option[Review]]
-  def getByCompanyId(cid: Long): Task[Option[Review]]
-  def getByUserId(uid: Long): Task[Option[Review]]
+  def getByCompanyId(cid: Long): Task[List[Review]]
+  def getByUserId(uid: Long): Task[List[Review]]
   def update(id: Long, op: Review => Review): Task[Review]
   def delete(id: Long): Task[Review]
 }
 
 class ReviewRepositoryLive private (quill: Quill.Postgres[SnakeCase]) extends ReviewRepository {
-  override def create(review: Review): Task[Review] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  import quill.*
 
-  override def getById(id: Long): Task[Option[Review]] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  inline given reviewSchema: SchemaMeta[Review]     = schemaMeta("reviews")
+  inline given reviewInsertMeta: InsertMeta[Review] = insertMeta(_.id, _.ctime, _.mtime)
+  inline given reviewUpdateMeta: UpdateMeta[Review] =
+    updateMeta(_.id, _.userId, _.companyId, _.ctime)
 
-  override def getByCompanyId(cid: Long): Task[Option[Review]] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  override def create(review: Review): Task[Review] = run {
+    query[Review].insertValue(lift(review)).returning(r => r)
+  }
 
-  override def getByUserId(uid: Long): Task[Option[Review]] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  override def getById(id: Long): Task[Option[Review]] = run {
+    query[Review].filter(_.id == lift(id))
+  }.map(_.headOption)
 
-  override def update(id: Long, op: Review => Review): Task[Review] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  override def getByCompanyId(cid: Long): Task[List[Review]] = run {
+    query[Review].filter(_.companyId == lift(cid))
+  }
 
-  override def delete(id: Long): Task[Review] =
-    ZIO.fail(new RuntimeException("not implemented"))
+  override def getByUserId(uid: Long): Task[List[Review]] = run {
+    query[Review].filter(_.userId == lift(uid))
+  }
+
+  override def update(id: Long, op: Review => Review): Task[Review] = for {
+    current <- getById(id)
+      .someOrFail(new RuntimeException(s"update review failed: missing id $id"))
+    updated <- run {
+      query[Review].filter(_.id == lift(id)).updateValue(lift(op(current))).returning(r => r)
+    }
+  } yield updated
+
+  override def delete(id: Long): Task[Review] = run {
+    query[Review].filter(_.id == lift(id)).delete.returning(r => r)
+  }
 }
 
 object ReviewRepositoryLive {

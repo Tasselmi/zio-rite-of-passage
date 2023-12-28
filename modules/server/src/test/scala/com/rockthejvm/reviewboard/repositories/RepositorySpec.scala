@@ -6,6 +6,7 @@ import org.testcontainers.containers.PostgreSQLContainer
 import javax.sql.DataSource
 import java.sql.SQLException
 import org.postgresql.ds.PGSimpleDataSource
+import zio.logging.*
 
 trait RepositorySpec {
 
@@ -27,7 +28,7 @@ trait RepositorySpec {
     ds.setURL(container.getJdbcUrl)
     ds.setUser(container.getUsername)
     ds.setPassword(container.getPassword)
-    ds.setDatabaseName("reviewboard")
+    ds.setDatabaseName(container.getDatabaseName())
     ds
   }
 
@@ -38,6 +39,7 @@ trait RepositorySpec {
         ZIO.attempt(c.stop()).ignoreLogged
       )
       ds <- ZIO.attempt(createDataSource(container))
+      _ <- ZIO.logWarning(s"data source info: url(${ds.getURL()}), dbname(${ds.getDatabaseName()})")
     } yield ds
   }
 }
