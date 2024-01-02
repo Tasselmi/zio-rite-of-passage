@@ -19,5 +19,5 @@ final case class Review(
 )
 
 object Review {
-  val codec: JsonCodec[Review] = DeriveJsonCodec.gen[Review]
+  given codec: JsonCodec[Review] = DeriveJsonCodec.gen[Review]
 }

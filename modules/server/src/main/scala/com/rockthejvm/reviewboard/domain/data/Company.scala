@@ -6,7 +6,7 @@ import zio.json.JsonCodec
 final case class Company(
     id: Long,
     slug: String,
-    val name: String,
+    name: String,
     url: String,
     location: Option[String] = None,
     country: Option[String] = None,
