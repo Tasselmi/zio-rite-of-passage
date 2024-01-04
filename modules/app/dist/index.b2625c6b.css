@@ -1,0 +1,4280 @@
+@import "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: #fff;
+  background: var(--background-color);
+}
+
+body {
+  background: #f6f6f6;
+  font-family: "Exo 2";
+}
+
+:root {
+  --body-bg-color: #f6f6f6;
+  --background-color: #9000ce;
+  --black: #000;
+  --white: #fff;
+  --btn-focus: #07263a;
+  --hero-background-color: #110049;
+  --btn-hover: #bc68df;
+  --text-color: #233d7b;
+  --bg-gradient: linear-gradient(45deg, #03001e, #7303c0, #ffef41);
+}
+
+main .jvm-home-page-top-bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-items: center;
+  width: 100%;
+  height: 25rem;
+  display: grid;
+}
+
+main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+  letter-spacing: .05em;
+  color: #fff;
+  margin-bottom: 1.063rem;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.813rem;
+}
+
+main .jvm-home-page-top-bg-img .jvm-home-page-title p {
+  letter-spacing: .05em;
+  color: var(--white);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.688rem;
+}
+
+main .jvm-home-page-recent-companies-heading {
+  margin-top: 5rem;
+}
+
+main .jvm-home-page-recent-companies-heading h1 {
+  letter-spacing: .1em;
+  color: #222;
+  margin: 0;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.313rem;
+}
+
+main .jvm-home-page-recent-companies-heading img {
+  margin-top: -1.25rem !important;
+}
+
+main .jvm-home-page-recent-companies-heading p {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375re;
+  color: #222222b3;
+  margin-top: .938rem;
+}
+
+main .section-1 .accordion-flush {
+  background: #fff;
+  width: 100%;
+  margin-top: .938rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.accordion-item:first-of-type {
+  width: 100%;
+}
+
+main .section-1 .search-filter-checkbox-option {
+  overflow: auto;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-heading h3 {
+  color: #222c;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-heading h3 span {
+  border-bottom: .125rem solid var(--background-color);
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all {
+  float: right;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all a {
+  color: #222c;
+  margin: .25rem 0 0;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.063rem;
+  text-decoration: none;
+}
+
+main .section-1 .jvm-recent-company-accordions .jvm-recent-company-accordion-body .accordion-header button {
+  box-shadow: none;
+  color: #222c;
+  background: #fff;
+  border: none;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none;
+}
+
+.accordion-flush .accordion-item #accordion-search-filter {
+  box-shadow: none;
+  background: none;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none;
+  color: #222c;
+  background: #fff;
+  border: none;
+  height: 4rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  border-bottom: .063rem solid #cecece !important;
+}
+
+main .section-1 #button-addon2 {
+  background: #fff;
+  border: .038rem solid #222c;
+  border-top-right-radius: 9.375rem;
+  border-bottom-right-radius: 9.375rem;
+  padding-left: .938rem;
+  border-left: none !important;
+}
+
+main .section-1 input:checked {
+  background-color: var(--background-color);
+}
+
+main .section-1 input::placeholder {
+  color: #222c;
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: .75rem;
+}
+
+.accordion-button:after {
+  content: "";
+  background: url("accordion-add-img.912f29ad.png");
+  margin-left: auto;
+  transition: all .5s;
+  transform: translateZ(.625rem);
+  background-repeat: no-repeat !important;
+}
+
+.accordion-button:not(.collapsed):after {
+  background: url("accordion-minus-img.f79336cb.png");
+  transition: all .5s;
+  transform: translateY(.625rem);
+}
+
+main .section-1 .form-control {
+  box-shadow: none;
+  background: #fff;
+  border: .038rem solid #222c;
+  padding: .438rem 0 .375rem 1rem;
+}
+
+main .section-1 .form-check input {
+  box-shadow: none;
+  border: .063rem solid #2229;
+  outline: none;
+  width: .938rem;
+  height: .938rem;
+}
+
+main .section-1 .form-check label {
+  letter-spacing: .09em;
+  color: #000c;
+  margin-left: .625px;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: .938rem;
+}
+
+main .section-1 .jvm-accordion-search-btn {
+  place-items: center;
+  height: 8.125rem;
+  display: grid;
+}
+
+main .section-1 .jvm-accordion-search-btn button {
+  color: #fff;
+  background: var(--background-color);
+  background-color: var(--background-color);
+  border: none;
+  flex-grow: 0;
+  width: 80%;
+  height: 2.5rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+main .section-1 .jvm-accordion-search-btn button:hover {
+  background: var(--btn-hover);
+}
+
+main .section-1 .jvm-accordion-search-btn button:focus {
+  background: #07263a;
+}
+
+.accordion-flush .accordion-item:last-child {
+  background: #fff;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-search-btn button:hover {
+  background: #ff6544;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply a {
+  text-decoration: none;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-search-btn button:focus {
+  background: #07263a;
+}
+
+main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+  margin: top 2.5re;
+  color: #fff;
+  background: var(--background-color);
+  background-color: var(--background-color);
+  border: none;
+  flex: none;
+  order: 0;
+  width: 80%;
+  height: 2.5rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+main .section-1 .jvm-recent-companies-available-companies {
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3.125rem;
+  padding: 1.75rem 1.875rem;
+  display: flex;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+main .section-1 .jvm-recent-companies-available-companies .jvm-recent-companies-available-companies-heading {
+  margin-bottom: 3.125rem;
+}
+
+main .section-1 .jvm-recent-companies-available-companies .jvm-recent-companies-available-companies-heading img {
+  margin-top: --1.563rem;
+}
+
+main .section-1 .jvm-recent-companies-available-companies h3 {
+  color: #222c;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle {
+  color: #2229;
+  background: none;
+  border: .063rem solid #2229;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .625rem .938px .625rem .625rem;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: .938rem;
+  display: flex;
+}
+
+main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle:after {
+  margin-left: 5.063rem;
+}
+
+main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown ul li {
+  color: #2229;
+  font-size: .75rem;
+}
+
+main .section-1 .jvm-recent-companies-cards {
+  border-left: .125rem solid var(--background-color);
+  background: #fff;
+  width: 100%;
+  height: auto;
+  margin-top: .938rem;
+  padding: 1.875rem;
+  display: flex;
+  box-shadow: 0 .063rem .125rem #0000001a;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+  float: left;
+  width: 12%;
+  margin-right: 1.25rem;
+}
+
+main .section-1 .jvm-recent-companies-card-contents {
+  float: left;
+  width: 66%;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2 {
+  letter-spacing: .09em;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.188rem;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+  letter-spacing: .09em;
+  color: #525252;
+  align-items: center;
+  margin-right: 1.25rem;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.063rem;
+  text-decoration: none;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior img {
+  margin-right: .313rem;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+  letter-spacing: .09em;
+  color: #525252;
+  align-items: center;
+  margin-right: 3.375rem;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.063rem;
+  text-decoration: none;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company img {
+  margin-right: .313rem;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company span {
+  color: var(--background-color);
+  font-size: .688rem;
+}
+
+main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+  margin-top: .938rem;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply {
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  display: flex;
+  position: relative;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+  background: var(--background-color);
+  color: #fff;
+  border: none;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: .625rem;
+  padding: .5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.063rem;
+  display: flex;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button:hover {
+  background: #ff6544;
+}
+
+main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button:focus {
+  background: #07263a;
+}
+
+main .section-1 .jvm-recent-companies-card-btn-apply img {
+  position: absolute;
+  top: -1.875rem;
+  right: -1.938rem;
+}
+
+main .section-1 .jvm-recent-companies-load-more-companies-btn {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+main .section-1 .jvm-recent-companies-load-more-companies-btn a {
+  color: var(--background-color);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-decoration-line: underline;
+}
+
+@media (width <= 1200px) {
+  main .jvm-home-page-top-bg-img {
+    height: 21.875rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    font-size: 2.813rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p {
+    font-size: 1.188rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading h1 {
+    font-size: 1.75rem;
+    line-height: 2.188rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading p, main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+    font-size: 1rem;
+  }
+
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-companies-accordion-body-heading {
+    padding: 1.688rem 1rem .688rem 1.625px;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading h3, .accordion-flush .accordion-item .accordion-button.collapsed, main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: 1.063rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies img {
+    width: 3.75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all a {
+    font-size: .75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies {
+    padding: 1.563px 1.688rem;
+  }
+
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-company-accordion-body .accordion-header button {
+    height: 4.625rem;
+    font-size: 1.063rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle {
+    font-size: .625rem;
+    padding: .5rem .813rem .5rem .5rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-menu li a {
+    font-size: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle:after {
+    margin-left: 3.75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    padding: 1.625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: 1.063rem;
+    font-size: .75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 3rem;
+    font-size: .75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    position: absolute;
+    top: -1.688rem;
+    right: -1.688rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn a {
+    font-size: 1.125rem;
+  }
+}
+
+@media (width <= 992px) {
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle {
+    font-size: .5rem;
+    padding: .375px .625rem .375rem .375rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-menu li a {
+    font-size: .5rem;
+  }
+
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-companies-accordion-body-heading {
+    padding: 1.5rem .813px .5rem 1.438px;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+    width: 60%;
+    padding: .5rem 6.25rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle:after {
+    margin-left: 2.5rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 18.75rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    font-size: 2.5rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading img {
+    width: 4.688rem;
+    margin-top: -1.625rem !important;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p {
+    font-size: 1rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading {
+    margin-top: 4.063rem;
+  }
+
+  main .section-1 .accordion-flush, main .section-1 .jvm-recent-companies-available-companies {
+    margin-top: 2.5rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading p, main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+    font-size: .875rem;
+  }
+}
+
+@media (width <= 800px) {
+  main .jvm-home-page-top-bg-img {
+    height: 17.5rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    margin-bottom: 9.625rem;
+    font-size: 2.063rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p, main .jvm-home-page-recent-companies-heading p {
+    font-size: .875rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading h1 {
+    font-size: 1.25px;
+  }
+
+  main .jvm-home-page-recent-companies-heading img {
+    width: 3.75rem;
+    margin-top: -1.875rem !important;
+  }
+
+  main .jvm-home-page-recent-companies-heading {
+    margin-top: 3.125rem;
+  }
+}
+
+@media (width <= 769px) {
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-companies-accordion-body-heading {
+    height: 4.813rem;
+    padding: 1.375rem .688rem .375rem 1.313rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 13.75rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading p, main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+    font-size: .75rem;
+  }
+
+  main .section-1 .accordion-flush, main .section-1 .jvm-recent-companies-available-companies {
+    margin-top: 1.875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company span {
+    font-size: .5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-search-btn {
+    height: 6.25rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading h3, main .accordion-flush .accordion-item .accordion-button.collapsed, main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: .875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies .jvm-recent-companies-available-companies-heading img {
+    width: 2.938rem;
+    margin-top: -1.875rem !important;
+  }
+
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-company-accordion-body .accordion-header button {
+    height: 4rem;
+    font-size: .875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    padding: 1.25rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: .625rem;
+    font-size: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all .fa-minus {
+    margin-top: .813rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 2.313rem;
+    font-size: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    position: absolute;
+    top: -1.25rem;
+    right: -1.25rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    padding: .375rem 1.875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn a {
+    font-size: .938rem;
+  }
+}
+
+@media (width <= 680px) {
+  main .section-1 .jvm-recent-company-accordions .jvm-recent-companies-accordion-body-heading {
+    padding: 1.188rem .563rem .375rem 1.125rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 11.25rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading img {
+    width: 2.5rem;
+    margin-top: -2.5rem !important;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    margin-bottom: .438rem;
+    font-size: 1.688rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p, main .jvm-home-page-recent-companies-heading p {
+    font-size: .688rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading h1 {
+    font-size: 1.063rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (width <= 580px) {
+  main .section-1 .jvm-recent-companies-accordion-body-heading h3, main .section-1 .jvm-recent-company-accordions .jvm-recent-company-accordion-body .accordion-header button, main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: .813rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 8.75rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p, main .jvm-home-page-recent-companies-heading p {
+    margin: 0;
+    font-size: .625rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading h1 {
+    font-size: .813rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading {
+    margin-top: 1.875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    padding: .938rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: .5rem;
+    font-size: .563rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all .fa-minus {
+    margin-top: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 1.875rem;
+    font-size: .563rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    width: 1.875rem;
+    position: absolute;
+    top: -1.063rem;
+    right: -1.063rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    padding: .313rem 1.875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .625rem;
+  }
+
+  main .section-1 .accordion-flush, main .section-1 .jvm-recent-companies-available-companies {
+    margin-top: 1.25rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn a {
+    font-size: .75rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (width <= 452px) {
+  main .jvm-home-page-top-bg-img {
+    height: 10rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-contents {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-search-btn {
+    height: 4.375rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-search-btn button {
+    width: 40%;
+    height: 2rem;
+    padding: 0 !important;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    margin: 0;
+    font-size: .5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company img, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior img {
+    width: .563rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading {
+    margin-top: 1.25rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading p {
+    margin-top: -.938rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem;
+    display: flex;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: 1rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: .438rem;
+    font-size: .563rem;
+  }
+
+  main .section-1 .jvm-recent-companies-accordion-body-heading .jvm-recent-companies-accordion-clear-all .fa-minus {
+    margin-top: .563rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 1.688rem;
+    font-size: .563rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    width: 1.563rem;
+    position: absolute;
+    top: -.625rem;
+    right: -.625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    width: 100%;
+    padding: .625rem 0;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn a {
+    font-size: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-company #dollar-sign-img {
+    width: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 100% !important;
+    padding: 1.25rem !important;
+  }
+}
+
+@media (width <= 399px) {
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle:after {
+    margin-left: 1.25rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 8.125rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: .625rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    font-size: .875rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title p {
+    margin-bottom: 0;
+  }
+
+  main .jvm-home-page-recent-companies-heading p {
+    font-size: .5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    padding: .625rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: .25rem;
+    font-size: .438rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company span {
+    font-size: .313rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 1.375rem;
+    font-size: .438rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    width: 1.25rem;
+    position: absolute;
+    top: -.625rem;
+    right: -.688rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: 0;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .313rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn {
+    margin-top: .938rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (width <= 330px) {
+  main .section-1 .jvm-recent-companies-available-companies-dropdown .dropdown-toggle:after {
+    margin-left: .5rem;
+  }
+
+  main .jvm-home-page-top-bg-img {
+    height: 7.5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: .625rem;
+  }
+
+  main .jvm-home-page-top-bg-img .jvm-home-page-title h1 {
+    font-size: .875rem;
+  }
+
+  main .jvm-home-page-recent-companies-heading p {
+    font-size: .5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards {
+    padding: .375rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .438rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: 0;
+    font-size: 1rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company span {
+    font-size: .313rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: 1.375rem;
+    font-size: .438rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    width: 1.25rem;
+    position: absolute;
+    top: -.375rem;
+    right: -.5rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .card-course-rupees {
+    margin-top: 0;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .813rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .188rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn {
+    margin-top: .938rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (width <= 308px) {
+  main .section-1 .jvm-recent-companies-cards {
+    padding: .188rem !important;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-contents h2, main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    font-size: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company {
+    margin-right: 0;
+    font-size: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-company span {
+    font-size: .313rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-course-details .card-senior {
+    margin-right: .938rem;
+    font-size: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-card-btn-apply img {
+    width: 1.25rem;
+    position: absolute;
+    top: -.188rem;
+    right: -.313rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-btn-apply button {
+    padding: 0 .5rem;
+    font-size: .375rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    margin-right: .188rem;
+  }
+
+  main .section-1 .jvm-recent-companies-load-more-companies-btn {
+    margin-top: .875rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media only screen and (width <= 768px) {
+  main .section-1 .jvm-recent-companies-accordion-body-heading h3, main .accordion-flush .accordion-item .accordion-button.collapsed, main .section-1 .jvm-recent-companies-available-companies h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (width <= 425px) {
+  .apply-mbl-btn {
+    display: block !important;
+  }
+
+  .hide-mbl-btn {
+    display: none !important;
+  }
+
+  .company-detail {
+    margin-top: .625rem;
+  }
+
+  main .section-1 .jvm-recent-companies-cards .jvm-recent-companies-card-img {
+    width: 3rem;
+    display: contents;
+  }
+
+  main .section-1 .jvm-accordion-search-btn button {
+    font-size: 1rem;
+  }
+
+  main .section-1 .jvm-accordion-search-btn {
+    height: 6.25rem;
+  }
+}
+
+.app {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.footer {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  padding: 1.25rem 0 .625rem;
+  display: flex;
+}
+
+.section-1 {
+  margin-bottom: .625rem;
+}
+
+.home-logo {
+  height: 3.125rem;
+}
+
+.aux-link {
+  display: block;
+}
+
+.company-list-hero {
+  background-size: 300%;
+  background-image: var(--bg-gradient);
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  height: 12.5rem;
+  animation: 20s infinite animateBG;
+  display: flex;
+}
+
+.company-list-title {
+  color: #fff;
+  margin: auto;
+}
+
+.companies-container {
+  flex-direction: column;
+  flex: 1;
+  align-items: stretch;
+  display: flex;
+}
+
+.company-card {
+  border: .063rem solid gray;
+  align-items: center;
+  margin: .625rem;
+  padding: 1.25rem;
+  display: flex;
+}
+
+.company-logo {
+  width: 6.25rem;
+}
+
+.company-card-content {
+  flex: 1;
+}
+
+.load-more-action {
+  align-self: center;
+}
+
+.company-list-page {
+  display: flex;
+}
+
+.filter-panel-container {
+  border: .063rem solid green;
+  margin: .625rem;
+  padding: .625rem;
+}
+
+.company-hero {
+  align-items: center;
+  margin: 1.25rem;
+  display: flex;
+}
+
+.company-detail {
+  color: #222c;
+  align-items: center;
+  display: flex;
+}
+
+.company-detail-value {
+  margin: 0 .313rem;
+}
+
+.load-more-action {
+  flex-direction: column;
+  align-items: center;
+  margin: 1.25rem;
+  display: flex;
+}
+
+.load-more-btn {
+  color: var(--background-color);
+  background: none;
+  border: none;
+}
+
+.company-title-link {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.jvm-recent-companies-card-img {
+  align-items: center;
+  display: flex;
+}
+
+.jvm-companies-details-card-profile-img {
+  border: .125rem solid var(--background-color);
+  background: #fff;
+  align-items: center;
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.jvm-companies-details-card-profile-title .company-detail {
+  color: #fff;
+}
+
+.jvm-companies-details-card-profile-title .company-detail-icon {
+  color: var(--background-color);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.jvm-companies-details-top-card {
+  color: #fff;
+}
+
+.markdown-body {
+  font-family: Exo 2;
+  box-sizing: border-box;
+  min-width: 12.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.813rem;
+}
+
+@media (width <= 767px) {
+  .markdown-body {
+    padding: .938rem;
+  }
+
+  .logo {
+    height: 0 !important;
+    min-height: 0 !important;
+  }
+}
+
+.logo {
+  align-items: center;
+  height: 100%;
+  min-height: calc(100vh - 4.75rem);
+  display: flex;
+  position: relative;
+}
+
+.logo img {
+  margin: auto;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.logo:after {
+  content: "";
+  z-index: -1;
+  background-size: 300%;
+  background-image: var(--bg-gradient);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: 20s infinite animateBG;
+  position: absolute;
+}
+
+.auth-link {
+  margin: 1.25rem 0;
+  display: block;
+}
+
+textarea.form-control {
+  min-height: 12.5rem;
+  font-family: monospace;
+}
+
+.company label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.page-status-errors {
+  color: red;
+  border: .063rem solid red;
+  margin: .625rem;
+  padding: .625rem;
+}
+
+.page-status-success {
+  color: green;
+  border: .063rem solid green;
+  margin: .625rem;
+  padding: .625rem;
+}
+
+.top-section, .form-text {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.form-submit-btn {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+@keyframes animateBG {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Exo 2";
+}
+
+.logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.logo h3 {
+  text-align: center;
+  color: var(--white);
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-section .top-section h1 {
+  color: var(--text-color);
+  margin-top: 3.688rem;
+  font-size: 2.188rem;
+  font-weight: 500;
+}
+
+.form-section .top-section span {
+  color: var(--background-color);
+}
+
+.form-section {
+  padding: .625rem 3.125rem;
+}
+
+.form-section .form-input input {
+  opacity: .6;
+  border-radius: 0;
+}
+
+.form-section .form-input label {
+  color: var(--black);
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.form-section .form-input span {
+  color: var(--background-color);
+}
+
+.form-section .second-input input {
+  opacity: .6;
+}
+
+.form-section .second-input label {
+  color: var(--black);
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.field-icon {
+  float: right;
+  z-index: 2;
+  color: #727272b2;
+  margin-top: -1.563rem;
+  margin-left: -1.563rem;
+  margin-right: 3.125rem;
+  position: relative;
+}
+
+form i {
+  cursor: pointer;
+  margin-left: -1.875rem;
+}
+
+.form-section input:focus {
+  box-shadow: none;
+}
+
+.form-section .forgot a {
+  float: right;
+  margin-top: 1.25rem;
+  font-size: .875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.form-section button {
+  color: var(--white);
+  background-color: var(--background-color);
+  border: none;
+  margin-top: 1.875rem;
+  padding: .625rem 5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.form-section button:hover {
+  background-color: var(--btn-hover);
+}
+
+.form-section button:focus {
+  background-color: var(--btn-focus);
+}
+
+@media only screen and (width <= 600px) {
+  .logo h3 {
+    font-size: 1.125rem;
+  }
+
+  .form-section {
+    padding: .625rem 1.25rem;
+  }
+
+  .form-section .top-section h1 {
+    margin-top: 2.438rem;
+    font-size: 1.25rem;
+  }
+
+  .form-section .form-input label {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .form-section .second-input label {
+    margin-top: .625rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (width >= 280px) and (width <= 305px) {
+  .form-section {
+    padding: .313rem .938rem;
+  }
+
+  .form-section .top-section h1 {
+    margin-top: 1.563rem;
+    font-size: 1.125rem;
+  }
+
+  .form-section .form-input label {
+    margin-top: 1.25rem;
+    font-size: .875rem;
+  }
+
+  .form-section .second-input label {
+    margin-top: .625rem;
+    font-size: .875rem;
+  }
+}
+
+.form-section .form-input .form-control:focus, .form-section .second-input .form-control:focus {
+  border-color: var(--background-color);
+}
+
+@media only screen and (width <= 768px) {
+  .logo img {
+    display: none;
+  }
+
+  .logo {
+    height: 6.25rem;
+  }
+}
+
+.nav-item .jvm-item {
+  padding-left: .938rem;
+  padding-right: .938rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #222 !important;
+}
+
+.About-dpwn li a img {
+  margin-right: .625rem;
+}
+
+.jvm-iteme:hover, .jvm-iteme:focus {
+  color: var(--btn-hover) !important;
+}
+
+.SMN_effect-3 .profile:after {
+  background: var(--background-color);
+  content: "";
+  opacity: 0;
+  width: .5rem;
+  height: .5rem;
+  position: absolute;
+  top: 80%;
+  left: 3.75rem !important;
+}
+
+.SMN_effect-3 .Home:after {
+  background: var(--background-color);
+  content: "";
+  opacity: 0;
+  -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+  -moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+  width: .5rem;
+  height: .5rem;
+  transition: height .3s, opacity .3s, transform .3s;
+  position: absolute;
+  top: 80%;
+  left: 1.875rem;
+  transform: translateY(-10px);
+}
+
+.SMN_effect-3 .contect-us:hover:after, .SMN_effect-3 .contect-us:focus:after {
+  opacity: 1;
+  height: .5rem;
+  top: 80%;
+  left: 3.438rem;
+  transform: translateY(0);
+}
+
+.SMN_effect-3 .post-a-company:hover:after, .SMN_effect-3 .post-a-company:focus:after {
+  opacity: 1;
+  height: .5rem;
+  left: 3.438rem;
+  transform: translateY(0);
+}
+
+@media only screen and (width >= 768px) and (width <= 991px) {
+  .jvm-iteme {
+    display: none;
+  }
+
+  .SMN_effect-3 .profile:after {
+    position: absolute;
+    top: 80%;
+  }
+
+  .SMN_effect-3 .contect-us:focus:after, .SMN_effect-3 .post-a-company:hover:after {
+    opacity: 1;
+    height: .5rem;
+    transform: translateY(0);
+  }
+
+  .SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 90%;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem;
+  }
+}
+
+@media only screen and (width >= 480px) and (width <= 768px) {
+  .jvm-iteme {
+    display: none;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem !important;
+  }
+
+  .SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 90%;
+  }
+}
+
+@media only screen and (width >= 319px) and (width <= 479px) {
+  .SMN_effect-3 .jvm-item:after {
+    display: none;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem;
+  }
+
+  .jvm-iteme {
+    display: none;
+  }
+}
+
+@media only screen and (width >= 280px) and (width <= 320px) {
+  .SMN_effect-3 .jvm-item:after, .jvm-iteme {
+    display: none;
+  }
+
+  .JVM-nav {
+    padding: 0;
+    padding-left: 0 !important;
+  }
+
+  .JVM-nav img {
+    width: 90%;
+  }
+
+  .profile-img {
+    width: 1.25rem !important;
+  }
+
+  .about-d-p-w img {
+    width: 1.25rem;
+  }
+
+  .SMN_effect-3 .jvm-item:after {
+    display: none;
+  }
+}
+
+.jvm-nav {
+  background: var(--white);
+}
+
+.JVM-nav {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.nav-item .jvm-item {
+  font-family: "Exo 2" sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #222 !important;
+}
+
+.nav-item .jvm-item:focus {
+  color: var(--background-color) !important;
+}
+
+.nav-item .jvm-item:hover {
+  transition-duration: 0s;
+  color: var(--background-color) !important;
+}
+
+.cart {
+  color: var(--black);
+  width: .5rem;
+  height: .313rem;
+}
+
+.profile-img:hover {
+  color: var(--background-color) !important;
+}
+
+.nav-btne {
+  background: var(--white);
+  border: .063rem solid var(--background-color);
+  color: var(--background-color);
+  margin: .313rem .938rem 0 2.5rem;
+  padding: .625rem 1.125rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.188rem;
+}
+
+.nav-btne:focus {
+  color: var(--white);
+  border: none;
+  background-color: var(--btn-focus) !important;
+}
+
+.nav-btne:hover {
+  background-color: var(--background-color);
+  color: var(--white);
+}
+
+.nav-btne-login {
+  color: var(--white);
+  border: .063rem solid var(--background-color);
+  background-color: var(--background-color);
+  margin: .313rem .938rem 0 0;
+  padding: .625rem 1.813rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.188rem;
+}
+
+.nav-btne-login:focus {
+  color: var(--white);
+  border: none;
+  background-color: var(--btn-focus) !important;
+}
+
+.jvm-iteme:hover, .jvm-iteme:focus {
+  color: var(--btn-hover) !important;
+}
+
+.nav-btne-login:hover {
+  background-color: var(--btn-hover);
+  color: var(--white);
+}
+
+.jvm-iteme {
+  font-family: "Exo 2" sans-serif;
+  margin-top: .313rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #222 !important;
+}
+
+.jvm-item:hover, .jvm-item:focus {
+  outline: none;
+}
+
+.back {
+  padding: 3.125rem 0 9.375rem;
+}
+
+.color-3 {
+  background: #353535;
+}
+
+.menu .jvm-item {
+  color: var(--black);
+  flex-direction: column;
+  align-items: center;
+  padding: .938rem 1.563rem;
+  display: flex;
+  position: relative;
+}
+
+.SMN_effect-3 .jvm-item:after {
+  background: var(--background-color);
+  content: "";
+  opacity: 0;
+  -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+  -moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+  width: .5rem;
+  height: .5rem;
+  transition: height .3s, opacity .3s, transform .3s;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-10px);
+}
+
+.SMN_effect-3 .jvm-item:hover:after, .SMN_effect-3 .jvm-item:focus:after {
+  opacity: 1;
+  height: .5rem;
+  transform: translateY(0);
+}
+
+.SMN_effect-3 .Home:after {
+  background: var(--background-color);
+  content: "";
+  opacity: 0;
+  -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+  -moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+  width: .5rem;
+  height: .5rem;
+  transition: height .3s, opacity .3s, transform .3s;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-10px);
+}
+
+.SMN_effect-3 .Home:hover:after, .SMN_effect-3 .Home:focus:after {
+  opacity: 1;
+  height: .5rem;
+  transform: translateY(0);
+}
+
+.SMN_effect-3 .contect-us:hover:after, .SMN_effect-3 .contect-us:focus:after {
+  opacity: 1;
+  height: .5rem;
+  top: 80%;
+  transform: translateY(0);
+}
+
+.SMN_effect-3 .post-a-company:hover:after, .SMN_effect-3 .post-a-company:focus:after {
+  opacity: 1;
+  height: .5rem;
+  transform: translateY(0);
+}
+
+@media only screen and (width >= 768px) and (width <= 991px) {
+  .jvm-iteme {
+    display: none;
+  }
+
+  .SMN_effect-3 .contect-us:focus:after, .SMN_effect-3 .post-a-company:hover:after {
+    opacity: 1;
+    height: .5rem;
+    transform: translateY(0);
+  }
+
+  .SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 90%;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem;
+  }
+}
+
+@media only screen and (width >= 480px) and (width <= 768px) {
+  .jvm-iteme {
+    display: none;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem !important;
+  }
+
+  .SMN_effect-3 .jvm-item:after {
+    position: absolute;
+    top: 90%;
+  }
+}
+
+@media only screen and (width >= 319px) and (width <= 479px) {
+  .SMN_effect-3 .jvm-item:after {
+    display: none;
+  }
+
+  .nav-btne {
+    margin-right: 3.625rem;
+  }
+
+  .jvm-iteme {
+    display: none;
+  }
+}
+
+@media only screen and (width >= 280px) and (width <= 320px) {
+  .SMN_effect-3 .jvm-item:after, .jvm-iteme {
+    display: none;
+  }
+
+  .JVM-nav {
+    padding: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (width <= 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (width <= 768px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (width <= 425px) {
+  html {
+    font-size: 19px;
+  }
+
+  .JVM-nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #f6f6f6;
+  overflow-x: hidden;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.review-summary {
+  justify-content: space-between;
+  align-items: center;
+  font-size: .75rem;
+  display: flex;
+}
+
+.review-detail {
+  align-items: center;
+  display: flex;
+}
+
+.review-detail-name {
+  margin-right: .2rem;
+  padding-top: .1rem;
+}
+
+.review-rating {
+  fill: var(--background-color);
+  width: 1rem;
+  height: 1rem;
+}
+
+.review-content {
+  margin-top: 1rem;
+}
+
+.review-posted {
+  color: gray;
+  font-size: .75rem;
+}
+
+.review-highlighted {
+  border: 1px solid var(--background-color);
+}
+
+.add-review {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.add-review-text {
+  flex-direction: column;
+  align-items: stretch;
+  margin: 1rem 0;
+  display: flex;
+}
+
+.add-review-text label {
+  margin-bottom: .5rem;
+}
+
+.add-review-text-input {
+  border-color: #d3d3d3;
+  outline: none;
+  min-height: 8rem;
+  padding: .3rem .5rem;
+  font-family: monospace;
+}
+
+.add-review-text-input:focus {
+  border-color: var(--background-color);
+}
+
+.add-review-scores {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.add-review-score select {
+  margin: 0 .5rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+  letter-spacing: .05em;
+  color: #fff;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.313rem;
+  font-size: 1.875rem !important;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+  letter-spacing: .09em;
+  color: #fff;
+  margin-right: 1.25rem;
+  font-family: Inter, sans-serif;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.063rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-rupees-details {
+  color: var(--background-color);
+  font-family: Inter;
+  font-size: .5rem;
+  font-weight: 400;
+  line-height: .605rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button:focus {
+  box-shadow: none;
+  background: #07263a;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+  color: var(--background-color);
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.jvm-company {
+  background: #fff;
+  margin-top: 3.125rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.jvm-company h2 {
+  font-family: "Exo 2" sans-serif;
+  letter-spacing: .1em;
+  color: #222;
+  padding: 1.875rem 0 0 3.125rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.jvm-company p {
+  font-family: "Exo 2" sans-serif;
+  letter-spacing: .03em;
+  color: #222c;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.jvm-company ul {
+  letter-spacing: .03em;
+  color: #222c;
+  padding-left: 4.063rem;
+  padding-right: 3.125rem;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.sa-text p {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 2.5rem 3.125rem 0;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.sa-text-2 p {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 1.875rem 3.125rem 3.125rem;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.rock-befor li {
+  letter-spacing: .1em;
+  color: #222;
+  font-family: "Exo 2";
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.313rem;
+  list-style-type: none;
+}
+
+.rock-befor {
+  position: relative;
+}
+
+.sidebar h4 {
+  color: var(--background-color);
+  font-weight: 600;
+  font-family: "Exo 2" sans-serif;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.sidebar ul li a {
+  font-family: "Karma" sans-serif;
+  color: #fff;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration: none !important;
+}
+
+.sidebar input {
+  box-shadow: none;
+  background: #fff;
+  outline: none;
+  width: 11.625rem;
+  height: 2.188rem;
+  padding: .938rem;
+  top: 136.063rem;
+  left: 62.563rem;
+}
+
+.main p {
+  font-family: "Karma" sans-serif;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding: .938rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.438rem;
+  display: flex;
+}
+
+.board-main-icon .rock-box .twitter-social-link {
+  background-color: #1d9bf0;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: grid;
+}
+
+.board-main-icon .rock-box .twitter-social-link .fa-twitter {
+  color: #fff;
+  font-size: 1.313rem;
+  text-decoration: none;
+}
+
+.board-main-icon .rock-box .instagram-social-link {
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0% 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: grid;
+}
+
+.board-main-icon .rock-box .fa-instagram {
+  color: #fff;
+  font-size: 1.438rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.board-main-icon .rock-box .facebook-social-link {
+  background-color: #1877f2;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+}
+
+.board-main-icon .rock-box .fa-facebook-f {
+  color: #fff;
+  margin-top: .438rem;
+  font-size: 1.438rem;
+  text-decoration: none;
+}
+
+.board-main-icon .rock-box .linkedin-social-link {
+  background-color: #0a66c2;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+}
+
+.board-main-icon .rock-box .linkedin-social-link .fa-linkedin-in {
+  color: #fff;
+  margin-top: .25rem;
+  font-size: 1.438rem;
+}
+
+@media (width <= 767px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  .rock-befor:first-child:before {
+    text-align: center;
+    content: "1";
+    background: var(--background-color);
+    color: #fff;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(2):before {
+    text-align: center;
+    content: "2";
+    background: var(--background-color);
+    color: #fff;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(3):before {
+    text-align: center;
+    content: "3";
+    background: var(--background-color);
+    color: #fff;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(4):before {
+    text-align: center;
+    content: "4";
+    background: var(--background-color);
+    color: #fff;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(5):before {
+    text-align: center;
+    content: "5";
+    background: var(--background-color);
+    color: #fff;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:last-child:before {
+    text-align: center;
+    content: "6";
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+}
+
+@media only screen and (width <= 575px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 1.875rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (width <= 469px) {
+  .rock-apply {
+    font-size: .875rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem 1.875rem;
+    font-size: .875rem;
+  }
+}
+
+@media only screen and (width <= 423px) {
+  .jvm-company-information {
+    padding: 1.875rem 0 1.875rem 1.625rem;
+  }
+
+  .rok-last {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .rock-apply {
+    font-size: .75rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .938rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width <= 320px) {
+  .rock-apply {
+    font-size: .75rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .625rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width >= 280px) and (width <= 479px) {
+  .jvm-company p {
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+  }
+
+  .jvm-company ul {
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+  }
+
+  .sa-text-2 p {
+    padding: .938rem 1.375rem 3.125rem;
+  }
+}
+
+@media (width <= 1200px) {
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.688rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    font-size: 1.063rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p {
+    font-size: .813rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 6.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    font-size: .75rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 3.125rem;
+  }
+}
+
+@media (width <= 100.75rem) {
+  .jvm-companies-details-top-card {
+    background: var(--bg-gradient);
+    padding: 2.188rem 5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.875rem;
+  }
+}
+
+@media (width <= 1440px) {
+  .Shifte {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (width <= 769px) {
+  .company-Board {
+    max-width: 37.5rem !important;
+  }
+}
+
+@media (width <= 888px) {
+  .jvm-companies-details-top-card {
+    padding: 1.875rem 3.75rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.563rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 5.625rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.438rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    margin-right: .938rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 2.813rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    padding: .625rem 1.875rem !important;
+    font-size: .938rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p, .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .75rem;
+  }
+}
+
+@media (width <= 728px) {
+  .jvm-companies-details-top-card {
+    padding: 1.563rem 3.125rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    padding: .5rem 1.563rem !important;
+    font-size: .813rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p, .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .625rem !important;
+  }
+}
+
+@media (width <= 652px) {
+  .jvm-companies-details-top-card {
+    padding: 1.25rem 2.813rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 100%;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.063rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    font-size: .688rem !important;
+  }
+}
+
+@media (width <= 477px) {
+  .jvm-companies-details-top-card {
+    padding: .938rem 1.563rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn {
+    width: 100%;
+    margin-top: .625rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: .938rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    margin-right: .5rem;
+    font-size: .5rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location img {
+    width: .75rem;
+    margin-right: .188rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location .dollar-sign {
+    width: .5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 1.875rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p {
+    margin-top: 1.25rem;
+    font-size: .625rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    text-align: center !important;
+    padding: .375rem 0 !important;
+    font-size: 1rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .625rem !important;
+  }
+}
+
+.board-main-icon {
+  float: right;
+  margin-bottom: .625rem;
+  position: relative;
+  left: 1.25rem;
+}
+
+@media only screen and (width >= 480px) and (width <= 767px) {
+  .rok-last {
+    padding: 1.563rem .813rem;
+  }
+}
+
+@media (width <= 425px) {
+  .rock-box {
+    padding: .625rem;
+  }
+
+  .rock-apply {
+    top: .188rem !important;
+  }
+
+  .heading-information {
+    font-size: 1rem;
+  }
+
+  .rock-befor:first-child:before {
+    text-align: center;
+    content: "1";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    margin-right: .625rem !important;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(2):before {
+    text-align: center;
+    content: "2";
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(3):before {
+    text-align: center;
+    content: "3";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(4):before {
+    text-align: center;
+    content: "4";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(5):before {
+    text-align: center;
+    content: "5";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:last-child:before {
+    text-align: center;
+    content: "6";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor li {
+    margin-left: .625rem;
+    font-size: .875rem;
+  }
+
+  .rock-li-text {
+    font-size: .813rem;
+  }
+
+  .rok-last {
+    padding: .625rem;
+  }
+
+  .rock-action-btn {
+    padding: .625rem 15px;
+    font-size: .625rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (width >= 424px) and (width <= 480px) {
+  .rock-action-btn {
+    font-size: .875rem;
+    padding: .625rem 1.5rem !important;
+  }
+
+  .rock-box {
+    position: initial;
+    padding: .625rem;
+  }
+
+  .rok-last {
+    padding: 1.25rem;
+  }
+
+  .rock-box {
+    padding: .625rem;
+  }
+}
+
+@media (width <= 321px) {
+  .rock-box {
+    position: initial;
+    padding: .625rem;
+  }
+
+  .rock-apply {
+    line-height: .25rem;
+    top: .188rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem;
+  }
+}
+
+.overview-section {
+  background: #fff;
+  margin: 2rem 0 1.875rem;
+  padding: 1.8rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.overview-in {
+  margin-bottom: 4.438rem;
+  padding: 0 3.125rem;
+}
+
+.company-over-heading {
+  letter-spacing: .1em;
+  color: #222;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.company-over-text {
+  letter-spacing: .03em;
+  color: #222c;
+  font-family: "Exo 2", sans-serif;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.overview-list {
+  letter-spacing: .03em;
+  color: #222c;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.company-over-text-2 {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 2.5rem 3.125rem 1.875rem;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.company-over-text-3 {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 0 3.125rem;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.jvm-company-information {
+  background: #fff;
+  margin-top: 1.875rem;
+  padding: 1.875rem 0 1.875rem 3.125rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.heading-information {
+  letter-spacing: .1em;
+  color: #222;
+  font-family: "Exo 2";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.rock-befor li {
+  letter-spacing: .1em;
+  color: #222;
+  margin-left: 1.5rem;
+  font-family: "Exo 2";
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.313rem;
+  list-style-type: none;
+}
+
+.rock-li-text {
+  letter-spacing: .1em;
+  color: #2229;
+  font-family: "Exo 2";
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+.rock-apply {
+  letter-spacing: .1em;
+  color: #222;
+  font-family: "Exo 2";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  position: relative;
+  top: .625rem;
+}
+
+.invite-row {
+  align-items: center;
+  display: flex;
+}
+
+.rock-action-btn {
+  color: #fff;
+  background: var(--background-color);
+  float: right;
+  border: none;
+  padding: .75rem 3.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+@media (width <= 767px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (width <= 575px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 1.875rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (width <= 469px) {
+  .rock-apply {
+    font-size: .875rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem 1.875rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width <= 423px) {
+  .jvm-company-information {
+    padding: 1.875rem 0 1.875rem 1.625rem;
+  }
+
+  .rok-last {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .rock-apply {
+    font-size: .75rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .938rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width <= 321px) {
+  .rock-apply {
+    font-size: .625rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .625rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width >= 321px) and (width <= 479px) {
+  .overview-in {
+    padding: 0 1.875rem !important;
+  }
+
+  .company-over-text-2 {
+    padding: 1.25rem 1.875rem .625rem;
+  }
+
+  .company-over-text-3 {
+    padding: 0 1.875rem;
+  }
+
+  .jvm-company-information {
+    padding-left: 1.875rem;
+  }
+
+  .rock-befor li {
+    margin-left: 0;
+  }
+
+  .rok-last {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .rock-befor:first-child:before, .rock-befor:nth-child(2):before, .rock-befor:nth-child(3):before, .rock-befor:nth-child(4):before, .rock-befor:nth-child(5):before, .rock-befor:last-child:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    left: -1.25rem !important;
+  }
+
+  .rock-befor li {
+    margin-left: 0;
+    font-size: .875rem;
+  }
+
+  .rock-li-text {
+    font-size: .813rem;
+  }
+}
+
+@media (width <= 320px) {
+  .overview-in {
+    padding: 0 1.875rem !important;
+  }
+
+  .company-over-text-2 {
+    padding: 1.25rem 1.875rem .625rem;
+  }
+
+  .company-over-text-3 {
+    padding: 0 1.875rem;
+  }
+
+  .jvm-company-information {
+    padding-left: 1.25rem;
+  }
+
+  .rock-befor li {
+    margin-left: 0;
+  }
+
+  .rok-last {
+    padding-left: .938rem;
+    padding-right: .938rem;
+  }
+
+  .rock-befor:first-child:before, .rock-befor:nth-child(2):before, .rock-befor:nth-child(3):before, .rock-befor:nth-child(4):before, .rock-befor:nth-child(5):before, .rock-befor:last-child:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    left: -1.25rem !important;
+  }
+
+  .rock-befor li {
+    margin-left: 0;
+    font-size: .813rem;
+  }
+
+  .rock-li-text {
+    font-size: .625rem;
+  }
+
+  .heading-information {
+    font-size: 1rem;
+  }
+
+  .rock-action-btn {
+    padding: .188rem .438rem;
+    font-size: .625rem;
+  }
+}
+
+.jvm-companies-details-top-card {
+  background: var(--bg-gradient);
+  padding: 2.5rem 6.25rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+  float: left;
+  margin-right: 2.5rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+  letter-spacing: .05em;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.313rem;
+  font-size: 1.875rem !important;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-title {
+  float: left;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location img {
+  margin-right: .313rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+  letter-spacing: .09em;
+  color: var(--white);
+  margin-right: 1.25rem;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.063rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees {
+  margin-top: .938rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+  margin-right: 3.375rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-rupees-details {
+  color: var(--background-color);
+  font-size: .625rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn {
+  float: right;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+  box-shadow: none;
+  color: var(--white);
+  background: var(--background-color);
+  border: none;
+  flex-direction: row;
+  flex: none;
+  order: 0;
+  align-items: flex-start;
+  gap: .625rem;
+  padding: .75rem 3.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: flex;
+  padding: .75rem 3.125rem !important;
+  font-size: 1.25rem !important;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button:hover {
+  background: var(--btn-hover);
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button:focus {
+  background: var(--btn-focus);
+  box-shadow: none;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p {
+  color: var(--white);
+  margin-top: 2.375rem;
+  margin-bottom: 0;
+  font-size: .938rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+.jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+  color: var(--background-color);
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.the-rock {
+  background: var(--body-bg-color);
+}
+
+.jvm-company {
+  background: var(--white);
+  background-color: #fff;
+  margin-top: 3.125rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.jvm-company h2 {
+  letter-spacing: .1em;
+  color: #222;
+  padding: 1.875rem 0 0 3.125rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.company-Board {
+  margin-top: 3.813rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.jvm-company p {
+  letter-spacing: .03em;
+  color: #222c;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.jvm-company ul {
+  letter-spacing: .03em;
+  color: #222c;
+  padding-left: 4.063rem;
+  padding-right: 3.125rem;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.jvm-company img {
+  background: linear-gradient(0deg, #0000004d, #0000004d), #d9d9d9;
+  width: 100%;
+  height: 9.313rem;
+}
+
+.sa-text p {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 2.5rem 3.125rem 0;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.sa-text-2 p {
+  letter-spacing: .03em;
+  color: #222c;
+  padding: 1.875rem 3.125rem 3.125rem;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.jvm-company-information {
+  background: var(--white);
+  padding: 1.875rem 0 1.875rem 3.125rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.heading-information {
+  letter-spacing: .1em;
+  color: #222;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.rock-befor li {
+  letter-spacing: .1em;
+  color: #222;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.313rem;
+  list-style-type: none;
+}
+
+.Shifte {
+  margin-top: 1.875rem;
+  padding-right: 0;
+}
+
+.month {
+  color: var(--background-color);
+}
+
+.rock-li-text {
+  letter-spacing: .1em;
+  color: #2229;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+.rock-befor {
+  position: relative;
+  left: 2.063rem;
+}
+
+.rock-befor:first-child:before {
+  text-align: center;
+  content: "1";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rock-befor:nth-child(2):before {
+  text-align: center;
+  content: "2";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rock-befor:nth-child(3):before {
+  text-align: center;
+  content: "3";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rock-befor:nth-child(4):before {
+  text-align: center;
+  content: "4";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rock-befor:nth-child(5):before {
+  text-align: center;
+  content: "5";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rock-befor:last-child:before {
+  text-align: center;
+  content: "6";
+  background: var(--background-color);
+  color: var(--white);
+  width: 1.563rem;
+  height: 1.563rem;
+  margin-top: .313rem;
+  position: absolute;
+  top: 0;
+  left: -1.563rem;
+}
+
+.rok-last {
+  background: var(--white);
+  margin-top: 1.875rem;
+  margin-bottom: 5rem;
+  padding: 2.375rem 3.125rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+.rock-apply {
+  letter-spacing: .1em;
+  color: #222;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  position: relative;
+  top: .625rem;
+}
+
+.rock-action-btn {
+  color: var(--white);
+  background: var(--background-color);
+  float: right;
+  border: none;
+  border-radius: 0;
+  padding: .5rem 3.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.rock-action-btn:hover {
+  background: var(--btn-hover);
+}
+
+.rock-action-btn:focus {
+  background: var(--btn-focus);
+}
+
+.main {
+  background-color: var(--hero-background-color);
+  width: 100%;
+}
+
+.sidebar h4 {
+  color: var(--background-color);
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.main-2 .sidebar.ul {
+  list-style: none;
+}
+
+ol, ul {
+  padding-left: .063rem;
+}
+
+.sidebar ul li {
+  margin: .938rem .625rem .625rem;
+}
+
+.sidebar ul li a {
+  color: var(--white);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration: none !important;
+}
+
+.sidebar input {
+  background: var(--white);
+  box-shadow: none;
+  outline: none;
+  width: 11.625rem;
+  height: 2.188rem;
+  padding: .938rem;
+  top: 136.063rem;
+  left: 62.563rem;
+}
+
+.sidebar button {
+  background: linear-gradient(#2e93ee80 0%, #f14521cc 100%);
+  width: 5.5rem;
+  height: 2.188rem;
+  top: 136.063rem;
+  left: 75.125rem;
+  box-shadow: .063rem .063rem .438rem #fb236a33;
+}
+
+.sidebar button span {
+  color: var(--white);
+}
+
+.main hr {
+  background-color: var(--body-bg-color);
+  width: 100% !important;
+}
+
+.main p {
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding: .938rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.438rem;
+  display: flex;
+}
+
+@media (width <= 767px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  .rock-befor:first-child:before {
+    text-align: center;
+    content: "1";
+    background: var(--background-color);
+    color: var(--white);
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(2):before {
+    text-align: center;
+    content: "2";
+    background: var(--background-color);
+    color: var(--white);
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(3):before {
+    text-align: center;
+    content: "3";
+    background: var(--background-color);
+    color: var(--white);
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(4):before {
+    text-align: center;
+    content: "4";
+    background: var(--background-color);
+    color: var(--white);
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:nth-child(5):before {
+    text-align: center;
+    content: "5";
+    background: var(--background-color);
+    color: var(--white);
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+
+  .rock-befor:last-child:before {
+    text-align: center;
+    content: "6";
+    margin-top: .313rem;
+    position: absolute;
+    top: 0;
+    left: -1.563rem !important;
+  }
+}
+
+@media only screen and (width <= 575px) {
+  .rock-apply {
+    font-size: 1.125rem;
+  }
+
+  .rock-action-btn {
+    padding: .75rem 1.875rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (width <= 469px) {
+  .rock-apply {
+    font-size: .875rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem 1.875rem;
+    font-size: .875rem;
+  }
+}
+
+@media only screen and (width <= 423px) {
+  .jvm-company-information {
+    padding: 1.875rem 0 1.875rem 1.625rem;
+  }
+
+  .rok-last {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .rock-apply {
+    font-size: .75rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .938rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width <= 320px) {
+  .rock-apply {
+    font-size: .75rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem .625rem;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (width >= 280px) and (width <= 479px) {
+  .jvm-company p {
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+  }
+
+  .jvm-company ul {
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+  }
+
+  .sa-text-2 p {
+    padding: .938rem 1.375rem 3.125rem;
+  }
+}
+
+@media (width <= 1200px) {
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.688rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    font-size: 1.063rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p {
+    font-size: .813rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 6.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    font-size: .75rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 3.125rem;
+  }
+}
+
+@media (width <= 1012px) {
+  .jvm-companies-details-top-card {
+    background: var(--bg-gradient);
+    padding: 2.188rem 5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.875rem;
+  }
+
+  .review-summary {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .review-detail-name {
+    width: 10rem;
+  }
+}
+
+@media (width <= 1440px) {
+  .Shifte {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (width <= 769px) {
+  .company-Board {
+    max-width: 37.5rem !important;
+  }
+}
+
+@media (width <= 888px) {
+  .jvm-companies-details-top-card {
+    padding: 1.875rem 3.75rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.563rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 5.625rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.438rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    margin-right: .938rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 2.813rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    padding: .625rem 1.875rem !important;
+    font-size: .938rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p, .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .75rem;
+  }
+}
+
+@media (width <= 728px) {
+  .jvm-companies-details-top-card {
+    padding: 1.563rem 3.125rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    padding: .5rem 1.563rem !important;
+    font-size: .813rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p, .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .625rem !important;
+  }
+}
+
+@media (width <= 652px) {
+  .jvm-companies-details-top-card {
+    padding: 1.25rem 2.813rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img img {
+    width: 4.375rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-img {
+    margin-right: 1.25rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: 1.063rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    font-size: .688rem !important;
+  }
+}
+
+@media (width <= 477px) {
+  .jvm-companies-details-top-card {
+    padding: .938rem 1.563rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn {
+    margin-top: .625rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-title h1 {
+    font-size: .938rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location span {
+    margin-right: .5rem;
+    font-size: .5rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location img {
+    width: .75rem;
+    margin-right: .188rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-company-and-location .dollar-sign {
+    width: .5rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-profile-company-details-senior-and-rupees .card-senior-details {
+    margin-right: 1.875rem;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p {
+    margin-top: 1.25rem;
+    font-size: .625rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn button {
+    padding: .375rem 1.25rem !important;
+    font-size: .625rem !important;
+  }
+
+  .jvm-companies-details-top-card .jvm-companies-details-card-apply-now-btn p span {
+    font-size: .625rem !important;
+  }
+}
+
+.board-socail-icon {
+  position: sticky;
+  top: 0;
+}
+
+.board-main-icon {
+  float: right;
+  margin-bottom: .625rem;
+  position: relative;
+  top: 3.125rem;
+  left: 1.25rem;
+}
+
+.board-main-icon li {
+  list-style-type: none;
+}
+
+.rock-box {
+  background: var(--white);
+  margin-bottom: .625rem;
+  padding: .625rem 1.25rem;
+  box-shadow: 0 0 .25rem #00000026;
+}
+
+@media only screen and (width >= 480px) and (width <= 767px) {
+  .rok-last {
+    padding: 1.563rem .813rem;
+  }
+}
+
+@media (width <= 425px) {
+  .rock-box {
+    padding: .625rem;
+  }
+
+  .rock-apply {
+    top: .188rem !important;
+  }
+
+  .heading-information {
+    font-size: 1rem;
+  }
+
+  .rock-befor:first-child:before {
+    text-align: center;
+    content: "1";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    margin-right: .625rem !important;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(2):before {
+    text-align: center;
+    content: "2";
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(3):before {
+    text-align: center;
+    content: "3";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(4):before {
+    text-align: center;
+    content: "4";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:nth-child(5):before {
+    text-align: center;
+    content: "5";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor:last-child:before {
+    text-align: center;
+    content: "6";
+    background: var(--background-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: .313rem;
+    font-size: .75rem;
+    position: absolute;
+    top: 0;
+    left: -.625rem !important;
+  }
+
+  .rock-befor li {
+    margin-left: .625rem;
+    font-size: .875rem;
+  }
+
+  .rock-li-text {
+    font-size: .813rem;
+  }
+
+  .rok-last {
+    padding: .625rem;
+  }
+
+  .rock-action-btn {
+    padding: .625rem 15px;
+    font-size: .625rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (width >= 424px) and (width <= 480px) {
+  .rock-action-btn {
+    font-size: .875rem;
+    padding: .625rem 1.5rem !important;
+  }
+
+  .rock-box {
+    position: initial;
+    padding: .625rem;
+  }
+
+  .rok-last {
+    padding: 1.25rem;
+  }
+
+  .rock-box {
+    padding: .625rem;
+  }
+}
+
+@media (width <= 321px) {
+  .rock-box {
+    position: initial;
+    padding: .625rem;
+  }
+
+  .rock-apply {
+    line-height: .25rem;
+    top: .188rem;
+  }
+
+  .rock-action-btn {
+    padding: .5rem;
+  }
+}
+
+.jvm {
+  background-color: var(--white);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.JVM-Post-A-company-Page-Detail-Page h1 {
+  letter-spacing: .1em;
+  color: #222;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.813rem;
+  display: flex;
+}
+
+.Upload-Company-Logo {
+  padding-top: 3.125rem;
+}
+
+.Upload-Company-Logo span {
+  color: var(--black);
+  cursor: pointer;
+  padding: .875rem .625rem 1.25rem 1.25rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.Upload-Company-Logo span:hover {
+  border: .063rem solid var(--background-color);
+  box-shadow: .063rem .25rem 1.313rem #fb236a33;
+}
+
+.Upload-Company-Logo img {
+  cursor: pointer;
+  background: #ffe7e2;
+  margin-left: 4.125rem;
+}
+
+.company {
+  padding: 0 .938rem 0 4.125rem;
+}
+
+.company .form-switch .form-check-input {
+  margin-top: 2.188rem;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.input-group > .form-control, .input-group > .form-select {
+  color: var(--black);
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.company .form-switch .form-check-input:checked {
+  background-color: var(--background-color);
+  border: none;
+}
+
+.company .form-switch .form-check-label {
+  margin-top: 1.875rem;
+}
+
+.company label, .jvm-company-form {
+  color: var(--black);
+  margin-bottom: .625rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.jvm-company-form option {
+  color: var(--black);
+  margin-bottom: .624rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.company-2 {
+  padding: 0 4.125rem;
+}
+
+.company-3 {
+  padding: 0 4.125rem 0 .938rem;
+}
+
+.company-2 label, .company-3 label {
+  color: var(--black);
+  margin-bottom: .625rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.company .form-label-2, .company-2 .form-label-2 {
+  margin-top: 1.875rem;
+}
+
+.form-check-2 input {
+  z-index: -1;
+}
+
+.ses button {
+  box-shadow: none;
+  border-color: var(--background-color);
+  background: var(--background-color);
+  border: none;
+  outline: none;
+  gap: .625rem;
+  margin: 6.25rem 0 3.125rem;
+  padding: .813rem 12.5rem;
+}
+
+.ses button:hover {
+  background-color: var(--btn-hover);
+}
+
+.ses button:focus {
+  background-color: var(--btn-focus);
+}
+
+.ses span {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.ses {
+  justify-content: center;
+  align-items: center;
+  padding: 0 4.125rem;
+  display: flex;
+}
+
+@media (width >= 768px) and (width <= 991px) {
+  .company label, .company-2 label, .company-3 label {
+    font-size: 1rem !important;
+  }
+
+  .company .form-switch .form-check-label {
+    margin-top: 2.938rem;
+  }
+
+  .company .form-switch .form-check-input {
+    margin-top: 3.125rem;
+  }
+}
+
+@media (width >= 480px) and (width <= 767px) {
+  .company, .company-2 {
+    padding: 0 1.25rem;
+  }
+
+  .company-3 {
+    padding: 0 1.25rem !important;
+  }
+
+  .company-Description, .Website-Url {
+    padding: 0 1.875rem;
+  }
+
+  .ses button {
+    margin: 5rem 0 2.5rem;
+    padding: .688rem 4.125rem;
+  }
+
+  .Upload-Company-Logo img {
+    width: 3.125rem;
+    margin-left: 1.25rem;
+  }
+
+  .company .form-switch .form-check-label {
+    margin-top: .625rem;
+  }
+
+  .company .form-switch .form-check-input {
+    margin-top: .938rem;
+    margin-bottom: .938rem;
+  }
+
+  .company-2 .form-label-2 {
+    margin-top: 0;
+  }
+}
+
+@media (width >= 280px) and (width <= 479px) {
+  .company, .company-2, .company-3 {
+    padding: 0;
+  }
+
+  .company-Description {
+    padding: 0 .625rem;
+  }
+
+  .company label, .company-2 label, .company-3 label {
+    font-size: .875rem;
+  }
+
+  .Website-Url {
+    padding: 0 .625rem;
+  }
+
+  .ses button {
+    margin: 3.125rem 0 1.875rem;
+    padding: .688rem 1.25rem;
+  }
+
+  .Upload-Company-Logo img {
+    margin-left: .438rem;
+  }
+
+  .Upload-Company-Logo span {
+    padding: 0 0 0 .625rem;
+    font-size: .875rem;
+  }
+
+  .Post-A-company-text h1 {
+    padding-top: .063rem;
+    font-size: 1.875rem;
+  }
+
+  .Post-A-company-text p {
+    padding-bottom: 1.875rem;
+    font-size: .688rem;
+    line-height: 0;
+  }
+
+  .Upload-Company-Logo img {
+    width: 2.5rem;
+    margin-left: 0;
+  }
+
+  .JVM-Post-A-company-Page-Detail-Page h1 {
+    font-size: 1.438rem;
+  }
+
+  .company-Description, .Website-Url {
+    font-size: .813rem;
+  }
+
+  .ses span {
+    font-size: 1rem;
+  }
+
+  .JVM-Post-A-company-Page-Detail-Page {
+    margin-top: -1.875rem;
+  }
+
+  .company-2 .form-label-2 {
+    margin-top: 0;
+  }
+
+  .company .form-switch .form-check-label {
+    margin-top: .688rem;
+  }
+
+  .company .form-switch .form-check-input {
+    margin-top: .938rem;
+  }
+}
+
+/*# sourceMappingURL=index.b2625c6b.css.map */

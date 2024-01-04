@@ -1,14 +1,15 @@
 package com.rockthejvm.reviewboard.http.controllers
 
 import zio.*
-
 import scala.collection.mutable
-import com.rockthejvm.reviewboard.http.endpoints.CompanyEndpoints
-import com.rockthejvm.reviewboard.domain.data.Company
-import com.rockthejvm.reviewboard.services.CompanyService
 import sttp.tapir.server.ServerEndpoint
+import com.rockthejvm.reviewboard.domain.data.*
+import com.rockthejvm.reviewboard.services.*
+import com.rockthejvm.reviewboard.http.endpoints.*
 
-class CompanyController private (service: CompanyService) extends BaseController with CompanyEndpoints {
+class CompanyController private (service: CompanyService)
+    extends BaseController
+    with CompanyEndpoints {
 
   // create
   val create: ServerEndpoint[Any, Task] = createEndpoint.serverLogicSuccess { req =>
@@ -19,8 +20,8 @@ class CompanyController private (service: CompanyService) extends BaseController
     getAllEndpoint.serverLogicSuccess(_ => service.getAll)
 
   val getById: ServerEndpoint[Any, Task] = getByIdEndpoint.serverLogicSuccess { id =>
-    ZIO.attempt(id.toLong).flatMap(service.getById).catchSome {
-      case _: NumberFormatException => service.getBySlug(id)
+    ZIO.attempt(id.toLong).flatMap(service.getById).catchSome { case _: NumberFormatException =>
+      service.getBySlug(id)
     }
   }
 

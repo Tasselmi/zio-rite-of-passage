@@ -1,9 +1,9 @@
 package com.rockthejvm.reviewboard.http.controllers
 
-import com.rockthejvm.reviewboard.services.ReviewService
-import com.rockthejvm.reviewboard.http.endpoints.ReviewEndpoints
-import sttp.tapir.server.ServerEndpoint
 import zio.*
+import sttp.tapir.server.ServerEndpoint
+import com.rockthejvm.reviewboard.http.endpoints.*
+import com.rockthejvm.reviewboard.services.*
 
 class ReviewController private (reviewService: ReviewService)
     extends BaseController

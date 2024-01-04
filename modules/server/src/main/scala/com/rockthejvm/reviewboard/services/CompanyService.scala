@@ -2,8 +2,8 @@ package com.rockthejvm.reviewboard.services
 
 import zio.*
 import com.rockthejvm.reviewboard.domain.data.*
-import com.rockthejvm.reviewboard.http.requests.CreateCompanyRequest
-import com.rockthejvm.reviewboard.repositories.CompanyRepository
+import com.rockthejvm.reviewboard.repositories.*
+import com.rockthejvm.reviewboard.http.requests.*
 
 // business logic
 // in between the HTTP layer and the DB layer
