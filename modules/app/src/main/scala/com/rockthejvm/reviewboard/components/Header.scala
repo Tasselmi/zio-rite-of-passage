@@ -4,9 +4,7 @@ import com.raquo.laminar.api.L.{*, given}
 import com.raquo.laminar.codecs.StringAsIsCodec
 import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLDivElement
-
-import scala.scalajs.js
-import scala.scalajs.js.annotation.JSImport
+import com.rockthejvm.reviewboard.common.Constants
 
 object Header {
 
@@ -45,16 +43,12 @@ object Header {
     )
   )
 
-  @js.native
-  @JSImport("/static/img/fiery-lava 128x128.png", JSImport.Default)
-  private val logoImg: String = js.native
-
   private def renderLogo() = a(
     href := "/",
-    cls := "navbar-brand",
+    cls  := "navbar-brand",
     img(
       cls := "home-logo",
-      src := logoImg,
+      src := Constants.logoImg,
       alt := "Rock The JVM"
     )
   )
