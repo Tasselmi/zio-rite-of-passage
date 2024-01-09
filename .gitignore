@@ -8,6 +8,7 @@ project/target
 project/project
 modules/app/dist
 modules/app/node_modules
+package-lock.json
 .parcel-cache
 .js
 .jvm

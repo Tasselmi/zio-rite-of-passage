@@ -1,13 +1,21 @@
 package com.rockthejvm.reviewboard
 
+import scala.util.Try
 import com.raquo.airstream.ownership.OneTimeOwner
 import com.raquo.airstream.timing.PeriodicStream
 import com.raquo.laminar.api.L.{*, given}
+import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom
-
-import scala.util.Try
+import org.scalajs.dom.HTMLDivElement
+import com.rockthejvm.reviewboard.components.*
+import frontroute.LinkHandler
 
 object App {
+
+  val app: ReactiveHtmlElement[HTMLDivElement] = div(
+    Header(),
+    Router()
+  ).amend(LinkHandler.bind)
 
   def main(args: Array[String]): Unit = {
     import Tutorial.*
@@ -15,21 +23,25 @@ object App {
     val containerNode = dom.document.querySelector("#app")
     render(
       containerNode,
-      div(
-        // modifiers
-        // CSS class
-        // styles
-        styleAttr := "color:green",
-        // onClick
-        // children
-        p("This is an app"),
-        p("Rock the JVM but also JS"),
-        staticContent,
-        timeUpdated,
-        clickUpdated,
-        clicksQueried,
-        clicksVar
-      )
+      app
+
+      /** laminar crash course
+        */
+//      div(
+//        // modifiers
+//        // CSS class
+//        // styles
+//        styleAttr := "color:green",
+//        // onClick
+//        // children
+//        p("This is an app"),
+//        p("Rock the JVM but also JS"),
+//        staticContent,
+//        timeUpdated,
+//        clickUpdated,
+//        clicksQueried,
+//        clicksVar
+//      )
     )
   }
 }
@@ -48,9 +60,8 @@ object Tutorial {
     p("Rock the JVM but also JS")
   )
 
-  /**
-   * EventStream -- produce values of the same type
-   */
+  /** EventStream -- produce values of the same type
+    */
   val ticks: PeriodicStream[Int] = EventStream.periodic(1000)
   // subscription -- Airstream
   given timer: OneTimeOwner = new OneTimeOwner(() => ())
@@ -68,10 +79,8 @@ object Tutorial {
     child <-- ticks.map(num => s"$num seconds")
   )
 
-
-  /**
-   * EventBus -- like EventStreams, but you can push new elements to the stream
-   */
+  /** EventBus -- like EventStreams, but you can push new elements to the stream
+    */
   val clickEvents = EventBus[Int]()
   val clickUpdated = div(
     span("clicks since loaded: "),
@@ -84,10 +93,8 @@ object Tutorial {
     child <-- clickEvents.events.scanLeft(0)(_ + _).map(num => s"$num clicks")
   )
 
-
-  /**
-   * Signal -- similar to EventStreams, but they have a "current value" (state)
-   */
+  /** Signal -- similar to EventStreams, but they have a "current value" (state)
+    */
   val countSignal = clickEvents.events.scanLeft(0)(_ + _).observe(using timer)
   val queryEvents = EventBus[Unit]()
   val clicksQueried = div(
@@ -107,10 +114,8 @@ object Tutorial {
     child <-- queryEvents.events.map(_ => countSignal.now())
   )
 
-
-  /**
-   * Var -- reactive variable
-   */
+  /** Var -- reactive variable
+    */
   val countVar = Var[Int](0)
   val clicksVar = div(
     span("clicks so far: "),
@@ -119,19 +124,15 @@ object Tutorial {
       `type` := "button",
       "Click Me",
       styleAttr := "display:block",
-      //onClick --> countVar.updater((current, mouseEvent) => current + 1)
-      //onClick --> countVar.writer.contramap(event => countVar.now() + 1)
+      // onClick --> countVar.updater((current, mouseEvent) => current + 1)
+      // onClick --> countVar.writer.contramap(event => countVar.now() + 1)
       onClick --> (_ => countVar.set(countVar.now() + 1))
     )
   )
 
-
-  /**
-   *              NO STATE      |       WITH STATE
-   *  --------------------------+----------------------------- 
-   *   read      EventStream    |         Signal
-   *  --------------------------+-----------------------------
-   *   write     EventBus       |         Var
-   *  --------------------------+-----------------------------
-   **/
+  /** NO STATE | WITH STATE
+    * --------------------------+----------------------------- read EventStream | Signal
+    * --------------------------+----------------------------- write EventBus | Var
+    * --------------------------+-----------------------------
+    */
 }
